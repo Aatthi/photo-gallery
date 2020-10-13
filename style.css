@@ -139,67 +139,49 @@ img {
 }
 
 .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 20px;
-	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
 	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.25s ease-out;
 }
 
-/* Modal Content (image) */
-.modal-content {
-	margin: auto;
-	display: block;
-	width: 80%;
-	max-width: 700px;
+.modal.open {
+	opacity: 1;
+	pointer-events: all;
 }
 
-/* Caption of Modal Image */
-#caption {
-	margin: auto;
-	display: block;
-	width: 80%;
-	max-width: 700px;
-	text-align: center;
-	color: #ccc;
-	padding: 10px 0;
-	height: 150px;
+.full-img {
+	position: absolute;
+	height: auto;
+	max-width: 1000px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.4);
+	transition: all 0.25s ease-out;
 }
 
-/* Add Animation */
-.modal-content,
-#caption {
-	-webkit-animation-name: zoom;
-	-webkit-animation-duration: 0.6s;
-	animation-name: zoom;
-	animation-duration: 0.6s;
+.full-img.open {
+	transform: translate(-50%, -50%) scale(0.6);
 }
 
-@-webkit-keyframes zoom {
-	from {
-		-webkit-transform: scale(0);
-	}
-	to {
-		-webkit-transform: scale(1);
-	}
+.full-img-landscape.open-landscape {
+	transform: translate(-50%, -50%) scale(1.4);
 }
 
-@keyframes zoom {
-	from {
-		transform: scale(0);
-	}
-	to {
-		transform: scale(1);
-	}
+.modal p {
+	color: white;
+	font-size: 2rem;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%, -5%);
 }
 
-/* The Close Button */
 .close {
 	position: absolute;
 	top: 15px;
