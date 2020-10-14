@@ -11,7 +11,7 @@
 <body>
 
 
-    <div class="side-nav-wrapper">
+    <div id="side-nav" class="side-nav-wrapper">
         
             <div class="heading">
                 <h1>Memory Flash</h1>
@@ -191,7 +191,7 @@
 
 
 const modal = document.querySelector('.modal');
-
+const sideNav = document.getElementById("side-nav")
 const previews = document.querySelectorAll('.container img');
 const original = document.querySelector('.full-img');
 
@@ -205,6 +205,7 @@ previews.forEach((previews) => {
 		//dynamic change in text and image
 		const originalSrc = previews.getAttribute('data-original');
 		original.src = `./Images/${originalSrc}`;
+        sideNav.style.background =" black";
 	});
 });
 
@@ -212,6 +213,7 @@ modal.addEventListener('click', (e) => {
 	if (e.target.classList.contains('modal')) {
 		modal.classList.remove('open');
 		original.classList.remove('open');
+        sideNav.style.background =" rgb(255, 255, 255)"
 	}
 });
 

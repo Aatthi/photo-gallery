@@ -185,7 +185,7 @@ img {
 }
 
 .modal {
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.9);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -218,15 +218,9 @@ img {
 }
 
 .full-img.open {
-	-webkit-transform: translate(-50%, -50%) scale(0.6);
-	-ms-transform: translate(-50%, -50%) scale(0.6);
-	transform: translate(-50%, -50%) scale(0.6);
-}
-
-.full-img-landscape.open-landscape {
-	-webkit-transform: translate(-50%, -50%) scale(1.4);
-	-ms-transform: translate(-50%, -50%) scale(1.4);
-	transform: translate(-50%, -50%) scale(1.4);
+	-webkit-transform: translate(-50%, -50%) scale(0.5);
+	-ms-transform: translate(-50%, -50%) scale(0.5);
+	transform: translate(-50%, -50%) scale(0.5);
 }
 
 .modal p {
