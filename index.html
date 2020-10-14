@@ -206,6 +206,7 @@ previews.forEach((previews) => {
 		const originalSrc = previews.getAttribute('data-original');
 		original.src = `./Images/${originalSrc}`;
         sideNav.style.background =" black";
+        sideNav.style.boxShadow = "none"
 	});
 });
 
@@ -214,6 +215,7 @@ modal.addEventListener('click', (e) => {
 		modal.classList.remove('open');
 		original.classList.remove('open');
         sideNav.style.background =" rgb(255, 255, 255)"
+        sideNav.style.boxShadow = "0 35px 20px #777";
 	}
 });
 
