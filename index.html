@@ -14,15 +14,15 @@
     <div id="side-nav" class="side-nav-wrapper">
         
             <div class="heading">
-                <h1 id="mem-flash"  >Memory Flash</h1>
+                <h1 id="mem-flash" class="mem-white" >Memory Flash</h1>
             </div>
 
        
 
             <div  class="nav">
                 <ul>
-                    <li><a  href="#Photos">Photos</a></li>
-                    <li><a  href="#Photos">Videos</a></li>
+                    <li><a id="links"  href="#Photos">Photos</a></li>
+                    <li><a id="links"  href="">Videos</a></li>
                 </ul>  
             </div>
 
@@ -38,21 +38,6 @@
         <img src="" data-original="3.jpg" class="full-img-landscape" >
         <p class="caption"> </p>
 </div>
-
-<script>
-    const button = document.getElementById("mem-flash");
-    const sideNav = document.getElementById("side-nav");
-    const aLink = document.getElementsByTagName("a");
-    button.addEventListener("click", function(){
-        sideNav.style.background="black";
-        sideNav.style.color="white";
-        aLink.style.color="white";
-    });
-
-
-
-
-</script>
 
 
     </section>
