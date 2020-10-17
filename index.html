@@ -14,8 +14,20 @@
     <div id="side-nav" class="side-nav-wrapper">
         
             <div class="heading">
-                <h1>Memory Flash</h1>
+                <h1 id="mem-flash"  >Memory Flash</h1>
             </div>
+
+            <script>
+                const button = document.getElementById("mem-flash");
+                const sideNav = document.getElementById("side-nav");
+                button.addEventListener("click", function(){
+                    sideNav.style.background="black";
+                });
+
+
+            
+
+            </script>
 
             <div class="nav">
                 <ul>
