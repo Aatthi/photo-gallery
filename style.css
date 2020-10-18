@@ -94,7 +94,7 @@ a:visited {
 	display: -ms-grid;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-gap: 1em;
+	grid-gap: 10px;
 	padding-top: 30px;
 	padding-left: 350px;
 	padding-right: 30px;
