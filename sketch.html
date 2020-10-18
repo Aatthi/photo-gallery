@@ -47,9 +47,9 @@
 
 
         
-        const containerNodes = document.getElementById("container").childNodes;
-        containerNodes.addEventListener('mouseover', function(){
-            containerNodes.style.background = "black";
+        const container = document.getElementById("container");
+        container.childNodes.addEventListener('mouseover', function(){
+            container.style.background = "black";
         })
 
         container.childNodes.addEventListener('mouseout', function(){
