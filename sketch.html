@@ -47,12 +47,12 @@
 
 
         
-        
-        container.addEventListener('mouseover', function(){
-            container.style.background = "black";
+        const containerNodes = document.getElementById("container").childNodes;
+        containerNodes.addEventListener('mouseover', function(){
+            containerNodes.style.background = "black";
         })
 
-        container.addEventListener('mouseout', function(){
+        container.childNodes.addEventListener('mouseout', function(){
             container.style.background = "white";
         })
     </script>
