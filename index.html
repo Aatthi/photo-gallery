@@ -22,7 +22,7 @@
             <div  class="nav">
                 <ul>
                     <li><a id="links"  href="#Photos">Photos</a></li>
-                    <li><a id="links"  href="">Videos</a></li>
+                    <li><a id="links-2"  href="">Videos</a></li>
                 </ul>  
             </div>
 
@@ -32,6 +32,8 @@
 
     </div>
 
+
+
     <div class="modal">
        
         <img  src="" data-original="3.jpg" class="full-img" />
@@ -40,9 +42,9 @@
 </div>
 
 
-    </section>
 
-    <div class="container">
+
+    <div id="containers" class="container">
 
         <div>
             <img id="Photos" src="Images/1.jpg" data-original="1.jpg">
@@ -188,6 +190,32 @@
         </div>
 
         <script>
+    let darkMode = document.getElementById("mem-flash");
+    let sideNav = document.getElementById("side-nav");
+    let links = document.getElementById("links")
+    let linking = document.getElementById("links-2")
+    let container = document.getElementById("containers")
+    darkMode.addEventListener('click', function(){
+        sideNav.style.backgroundColor = "black";
+        sideNav.style.color = "white";
+        links.style.color = "white";
+        linking.style.color = "white";
+        container.style.background = "white"
+    });
+
+    for (i=0; i<20; i++ ){
+        function lightMode() {
+        sideNav.style.backgroundColor = "white";
+        sideNav.style.color = "black";
+        links.style.color = "black";
+        linking.style.color = "black";
+        container.style.background = "black"
+        }
+    }
+</script>
+
+
+        <script>
 
 
 const modal = document.querySelector('.modal');
@@ -219,9 +247,10 @@ modal.addEventListener('click', (e) => {
 	}
 });
 
+
+
         </script>
 
-        
 
 
     </div>
