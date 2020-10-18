@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sketch.css">
+</head>
+<body>
+    <!-- <div id="div" onmouseover="hoverFunction()" onmouseout="outFunction()">
+
+    </div>
+
+    <script>
+
+        const div = document.getElementById("div")
+        function hoverFunction() {
+            div.style.background = "black"
+        }
+        
+        function outFunction() {
+            div.style.background = "white"
+        }
+    </script> -->
+
+    <div id="container">
+    </div>
+
+    <script>
+        const container = document.getElementById("container");
+
+        function makeRows(rows, cols) {
+            container.style.setProperty('--grid-rows', rows);
+            container.style.setProperty('--grid-cols', cols);
+            
+            for (c = 0; c < (rows * cols); c++) {
+                let cell = document.createElement("div");
+                cell.setAttribute("id", "para")
+                cell.innerText = (c + 1);
+                container.appendChild(cell).className = "grid-item";
+            };
+
+           
+        };
+
+        makeRows(16, 16);
+
+
+        
+        
+        container.addEventListener('mouseover', function(){
+            container.style.background = "black";
+        })
+
+        container.addEventListener('mouseout', function(){
+            container.style.background = "white";
+        })
+    </script>
+</body>
+</html>
