@@ -24,308 +24,39 @@
     </script> -->
 
     <div class="container">
-        <div id="grid">
+        <div class="divs" onmouseover="hoverFunction()" onmouseout="deleteFunction()">
 
         </div>
-        <div id="grid">
+        <div class="divs" >
 
         </div>
-        <div id="grid">
+        <div class="divs" >
 
         </div>
-        <div id="grid">
+        <div class="divs" >
 
         </div>
-        <div id="grid">
 
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        <div id="grid">
-
-        </div>
-        
     </div>
 
     <script>
-       
+
+            function hoverFunction() {
+                var x = document.querySelectorAll(".divs");
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.backgroundColor = "black";
+                }
+            }
+
+            function deleteFunction() {
+                var x = document.querySelectorAll(".divs");
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.backgroundColor = "white";
+                }
+            }
+
     </script>
 </body>
 </html>
