@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Memory Flash</title>
 </head>
-<body>
+<body class="dark-theme || light-theme">
 
 
     <div id="side-nav" class="side-nav-wrapper">
@@ -23,6 +23,8 @@
                 <ul>
                     <li><a id="links"  href="#Photos">Photos</a></li>
                     <li><a id="links-2"  href="">Videos</a></li>
+                    <li><button class="btn-toggle">Light Mode</button></li>
+                    <li><button class="btn-toggle-dark">Dark Mode</button></li>
                 </ul>  
             </div>
 
@@ -348,6 +350,16 @@ modal.addEventListener('click', (e) => {
 });
 
 
+
+const btn = document.querySelector('.btn-toggle');
+const button = document.querySelector(',btn-toggle-dark');
+
+btn.addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+    btn.style.display ="none";
+    button.style.display = "flex";
+
+})
 
         </script>
 

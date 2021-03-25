@@ -89,6 +89,45 @@ a:visited {
 	text-decoration: none;
 }
 
+.btn-toggle {
+	color: black;
+	transition: all 0.25s;
+	border: none;
+	background: white;
+	font-size: 20px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 10px;
+}
+
+.nav .btn-toggle:hover {
+	color: white;
+	background: black;
+	padding: 10px 30px;
+}
+
+.btn-toggle-dark {
+	color: black;
+	transition: all 0.25s;
+	border: none;
+	background: white;
+	font-size: 20px;
+	font-family: 'Architects Daughter', cursive;
+	-webkit-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	letter-spacing: 10px;
+	display: none;
+}
+
+.nav .btn-toggle-dark:hover {
+	color: black;
+	background: white;
+	padding: 10px 30px;
+}
+
 .IWD a {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
